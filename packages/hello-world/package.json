@@ -10,8 +10,5 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "private": "false",
-  "publishConfig": {
-    "access": "public"
-  }
+  "private": "false"
 }
