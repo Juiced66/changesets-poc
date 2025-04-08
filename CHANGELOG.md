@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- e9cdfc9: good repo name
+
+## 1.0.2
+
+### Patch Changes
+
 - 53bdb95: Fixed config for npm
 
 ## 1.0.1
