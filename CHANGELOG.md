@@ -1,5 +1,11 @@
 # changesets-poc
 
+## 1.0.6
+
+### Patch Changes
+
+- 0a5bdc3: what ?
+
 ## 1.0.5
 
 ### Patch Changes
