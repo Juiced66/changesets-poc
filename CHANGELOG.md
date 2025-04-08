@@ -1,5 +1,11 @@
 # changesets-poc
 
+## 1.0.8
+
+### Patch Changes
+
+- 09558ed: Maybe I found out ?
+
 ## 1.0.7
 
 ### Patch Changes
