@@ -1,0 +1,17 @@
+{
+  "name": "changesets-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "changeset publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "turbo": "^2.5.0"
+  }
+}

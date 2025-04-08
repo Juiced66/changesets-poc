@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Version & Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create version PR or publish
+        uses: changesets/action@v1
+        with:
+          publish: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  slack:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack message
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{"text":"🚀 A new release has been published!"}' \
+          ${{ secrets.SLACK_WEBHOOK_URL }}
