@@ -1,5 +1,12 @@
 # changesets-poc
 
+## 1.0.4
+
+### Patch Changes
+
+- a4b5ff8: oups
+- 81b9ff4: fifth one
+
 ## 1.0.3
 
 ### Patch Changes
