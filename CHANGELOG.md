@@ -1,5 +1,11 @@
 # changesets-poc
 
+## 1.0.7
+
+### Patch Changes
+
+- 6ff623b: last try for today
+
 ## 1.0.6
 
 ### Patch Changes
