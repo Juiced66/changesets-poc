@@ -1,5 +1,5 @@
 {
-  "name": "@juiced66-org/changesets-poc",
+  "name": "juiced66-changesets-poc",
   "version": "1.0.3",
   "main": "index.js",
   "scripts": {
